@@ -21,7 +21,7 @@ import android.widget.Button;
  * Created by hoang8f on 5/5/14.
  */
 
-public class MainActivity extends Button implements View.OnTouchListener {
+public class Sbutton extends Button implements View.OnTouchListener {
 
     //Custom values
     private boolean isShadowEnabled = true;
@@ -40,20 +40,20 @@ public class MainActivity extends Button implements View.OnTouchListener {
 
     boolean isShadowColorDefined = false;
 
-    public MainActivity(Context context) {
+    public Sbutton(Context context) {
         super(context);
         init();
         this.setOnTouchListener(this);
     }
 
-    public MainActivity(Context context, AttributeSet attrs) {
+    public Sbutton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
         parseAttrs(context, attrs);
         this.setOnTouchListener(this);
     }
 
-    public MainActivity(Context context, AttributeSet attrs, int defStyle) {
+    public Sbutton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
         parseAttrs(context, attrs);
